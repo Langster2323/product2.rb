@@ -14,4 +14,9 @@ class Product < ApplicationRecord
         price
       end
   end
+  def display_product
+    if products.quantity > 0
+    product.all
+    end
+  end
 end

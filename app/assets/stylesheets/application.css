@@ -16,6 +16,31 @@
 
 .pages {
 float: right;
-margin: 5px
+margin: 5px;
 
+}
+
+.title {
+  font-size: 30px;
+
+}
+
+.navigation {
+  font-size: 20px;
+  float: right;
+  margin: 10px;
+}
+
+h1 {
+
+    text-align: center;
+    /*border-color: red;
+    border-style: groove;*/
+}
+
+body {
+  background-color: gray;
+  /*url(http://comfortsd.com/wp-content/uploads/2013/01/SLIDERCOMFORT1.jpg) no-repeat;
+  width: 180px;
+  height: auto;*/
 }
