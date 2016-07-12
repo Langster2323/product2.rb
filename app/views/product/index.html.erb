@@ -1,6 +1,5 @@
-<DOCTYPE! html>
-<html>
-    <h1>Product of Products</h1>
+
+    <!-- <h1>Product of Products</h1> -->
   <body>
       <!-- This let's me see the number of products available -->
       <h2>All <%= product.count %> Products</h2>
@@ -9,18 +8,19 @@
     <article>
         <!-- This allows a user to click on a link of the product they wish to view -->
         <h3><a href="/products/<%= product.id %>"><%= product.name %></a></h3>
+        <h3><a href="/prices/<%= product.price %>"><%= product.price %></a></h3>
           <!--This allows the condition of my products to be posted  -->
             <p><%= product.condition %></p>
 
-            <h3 class="pages"><a href= "Home", "Page Two", "Page Three">"Home", "Page Two", "Page Three"</a></h3>
+            <!-- <h3 class="pages"><a href= "Home", "Page Two", "Page Three">"Home", "Page Two", "Page Three"</a></h3> -->
 
 
 
 
     </article>
-  <footer> <h2>All <%= product.count %> Products</h2> </footer>
+
   </body>
-</html>
+
 
 
 

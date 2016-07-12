@@ -8,7 +8,8 @@
 
 CONDITIONS = ["good", "average", "perfect"]
 
-CLEARANCE = [true, false]
+CLEARANCE = [0, 1]
+
 10.times do
-  Product.create(name: Faker::Company.name, condition: CONDITIONS.sample, quantity: rand(0..10), on_clearance: CLEARANCE.sample, price: rand(0.00..500.00))
+  Product.create!(name: Faker::Commerce.product_name, condition: CONDITIONS.sample, quantity: rand(1..10), on_clearance: CLEARANCE.sample, price: rand(0..500), image: Faker::Avatar.image)
 end
