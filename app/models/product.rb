@@ -1,9 +1,9 @@
 class Product < ApplicationRecord
-  validate :name, null: false
-  validate :price, presence: true
-  validate :on_clearance, default: false
-  validate :condition, default: ""
-  validate :quantity, default: 0
+  validates :name, null: false
+  validates :price, presence: true
+  validates :on_clearance, default: false
+  validates :condition, default:""
+  validates :quantity, default: 0
 
   def display_price
       if condition == "good"
