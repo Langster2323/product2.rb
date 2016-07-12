@@ -8,16 +8,18 @@
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
 
-  <header class="header"> <h1>Product</h1>
-      <nav class="navigation">
-      <ul>
-        <li><a href='/'>Home</a></li>
-        <li><a href='/users'>users</a></li>
-        <li><a href='/product'>Product</a></li>
-      </ul>
-    </nav>
-  </header>
+
   <body>
+    <header class="header">
+      <h1>Yard Sale</h1>
+        <nav>
+        <ul class="navigation-links">
+          <li><a href='/' class="navigation-link">Home</a></li>
+          <li><a href='/users'class="navigation-link">users</a></li>
+          <li><a href='/product'class="navigation-link">Product</a></li>
+        </ul>
+      </nav>
+    </header>
     <%= yield %>
   </body>
 </html>

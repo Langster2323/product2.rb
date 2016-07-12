@@ -6,12 +6,14 @@
   <!-- Looking at each individual product -->
       <% product.each do |product| %>
     <article>
+      <div class="boxes">
         <!-- This allows a user to click on a link of the product they wish to view -->
         <h3><a href="/products/<%= product.id %>"><%= product.name %></a></h3>
-        <h3><a href="/prices/<%= product.price %>"><%= product.price %></a></h3>
+          <p class="image-inline"><img src="<%= product.image %>"></p>
+            <h4 class="price"><a href="/prices/<%= product.price %>" class="index-price"><%= product.price %></a></h4>
           <!--This allows the condition of my products to be posted  -->
             <p><%= product.condition %></p>
-
+</div>
             <!-- <h3 class="pages"><a href= "Home", "Page Two", "Page Three">"Home", "Page Two", "Page Three"</a></h3> -->
 
 

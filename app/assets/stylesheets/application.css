@@ -23,22 +23,38 @@ margin: 5px;
 .header {
   overflow: hidden;
   font-size: 30px;
-  background: lightblue;
+  background: lightgreen;
   color: white;
 }
-
-.navigation {
-  font-size: 20px;
+.navigation-links {
   float: right;
+  list-style: none;
+}
+
+.navigation-link  {
+  font-size: 20px;
   margin: 10px;
-  background: lightblue;
+  background: lightgreen;
+  text-decoration: none;
+  color: white;
 
 }
 
 body {
-  background-repeat: no-repeat;
   background: url(http://comfortsd.com/wp-content/uploads/2013/01/SLIDERCOMFORT1.jpg);
 }
+
+.index-price {
+  font-size: 16px;
+  font-weight: lighter;
+  background: lightgreen;
+}
+
+.boxes {
+  float: left;
+}
+
+
 
 h1 {
 
