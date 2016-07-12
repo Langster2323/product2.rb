@@ -13,3 +13,9 @@
  *= require_tree .
  *= require_self
  */
+
+.pages {
+float: right;
+margin: 5px
+
+}

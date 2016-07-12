@@ -42,3 +42,5 @@ Things you may want to cover:
 <!-- Created a constant called clearance which holds an array of boolean values -->
 
 <!-- Created a loop in seed.rb to generate ten random names, for ten random products -->
+
+<!-- Created a CSS block for the three pages. -->
