@@ -1,8 +1,10 @@
 class ProductsController < ApplicationController
   #CRUD
   def index
-    render 'product/index.html.erb', locals: {
-      product: Product.all
+    render template: 'product/index.html.erb', locals: {
+      product: Product.all,
+        locale: [:en],
+        formats: [:html], variants: [], handlers: [:raw, :erb, :html, :builder, :ruby, :coffee, :jbuilder]
     }
   end
 
@@ -10,6 +12,8 @@ class ProductsController < ApplicationController
     if Product.exists?(params[:id])
       render template: 'product/show.html.erb', locals: {
         product: Product.find(params[:id])
+      #   locale: [:en],
+      #   formats: [:html], variants: [], handlers: [:raw, :erb, :html, :builder, :ruby, :coffee, :jbuilder]
       }
     elsif product.quantity = 0
       render
