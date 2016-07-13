@@ -26,6 +26,7 @@ margin: 5px;
   background: lightgreen;
   color: white;
 }
+                    /*========NAVAGTION LINKS==============*/
 .navigation-links {
   float: right;
   list-style: none;
@@ -37,7 +38,11 @@ margin: 5px;
   background: lightgreen;
   text-decoration: none;
   color: white;
+}
 
+.navigation-button {
+  width: 45px;
+  height: 45px;
 }
 
 body {
