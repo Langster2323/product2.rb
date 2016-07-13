@@ -3,9 +3,11 @@ Rails.application.routes.draw do
 
   # get 'items', to: 'items#index'
 
+
   get 'products/:id', to: 'products#show'
 
   get 'conditions', to: 'conditions#index'
 
-  root 'products#index'
+
+  root 'dashboard#home'
 end

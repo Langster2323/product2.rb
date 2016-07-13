@@ -3,8 +3,7 @@ class ProductsController < ApplicationController
   def index
     render template: 'product/index.html.erb', locals: {
       product: Product.all,
-        # locale: [:en],
-        # formats: [:html], variants: [], handlers: [:raw, :erb, :html, :builder, :ruby, :coffee, :jbuilder]
+        
     }
   end
 
